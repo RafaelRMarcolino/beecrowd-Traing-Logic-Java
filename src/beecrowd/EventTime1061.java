@@ -1,4 +1,4 @@
-/**
+package beecrowd; /**
 
  Peter is organizing an event in his University. The event will be in April month, beginning and finishing
  within April month. The problem is: Peter wants to calculate the event duration in seconds, knowing obviously
