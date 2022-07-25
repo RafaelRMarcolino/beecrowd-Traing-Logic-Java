@@ -1,10 +1,11 @@
+package matriz;
 
 import java.util.Random;
 import java.util.Scanner;
 
-public class Traing {
+public class MatrizExercicio2 {
 
-    /**Gere e imprima uma matriz M 4x4 com valores aleatorios entre 0 - 100.Apos isso determine
+    /**Gere e imprima uma matriz M 4x4 com valores aleatorios entre 0 - 100. Apos isso determine
      * o maior e o menor numero da valor da linha 5 e qual e o menor valor da linha 5 e qual e o maior
      * e menor valor da coluna 7.
      */
@@ -64,5 +65,3 @@ public class Traing {
     }
 
 }
-
-
