@@ -1,37 +1,39 @@
-import javax.swing.*;
-import javax.xml.crypto.Data;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.LocalTime;
-import java.util.Calendar;
 import java.util.Scanner;
 
 public class Traing {
 
-    public static void main(String[] args) throws ParseException {
+    public static void main(String[] args)  {
 
-        double [] temperatura = new double[365];
-        temperatura[0] = 31.2;
-        temperatura[1] = 78.2;
-        temperatura[2] = 56.2;
-        temperatura[3] = 21.2;
-        temperatura[4] = 33.2;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Quantas pessoas entrevistadas? ");
 
-        System.out.println("Temperatura do dia " + temperatura[2]);
+        int numeroEntrevista = sc.nextInt();
+        String [][] qtPessoas = new String[numeroEntrevista][];
 
-        //Tamnho do Array
-        System.out.println("O tamnho do array " + temperatura.length);
+        for(int i=0; i<qtPessoas.length; i++){
 
-        for(int i=0; i < temperatura.length; i++){
-            System.out.println("O valor  da temperatura do dia " + (i+1) + " é: " + temperatura[i]);
+            System.out.println("Quantas criancas ?");
+            int qtdCriancas = sc.nextInt();
+
+            qtPessoas[i] =  new String[qtdCriancas];
+
+            for (int j=0; j<qtPessoas[i].length; j++){
+
+                System.out.println("nome das criancas ?" + (j + i));
+
+                qtPessoas[i][j] = sc.next();
+            }
         }
 
-        //for melhorado
-        for(double temp: temperatura){
-            System.out.println(temp);
+        for(int i=0; i<qtPessoas.length; i++){
+            System.out.println("Pessoa "+ i  + " tem " + qtPessoas[i].length  + "filhos");
+            for (int j=0; j<qtPessoas[i].length; j++){
+
+                System.out.println(qtPessoas[i][j]);
+            }
         }
+
+        System.out.println("fim");
 
     }
 

@@ -27,6 +27,22 @@ public class Vetores {
             System.out.println(temp);
         }
 
+        // vetor iniciando
+        double [] notasDoAluno1 = {7, 8, 9, 10};
+        double [][] notaDoAluno2 = {{7, 8, 9, 10}, {8, 6, 7, 10}};
+
+        System.out.println("Out put da matriz notas do aluno2");
+        for(int i=0; i<notaDoAluno2.length; i++){
+            for (int j=0; j< notaDoAluno2[i].length; j++){
+                System.out.println(notaDoAluno2[i][j] + " - ");
+            }
+            System.out.println();
+        }
+
+
+
+
+
     }
 
 }
