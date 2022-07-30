@@ -4,28 +4,18 @@ public class Traing {
 
     public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
+        char char1 = scanner.next().charAt(0);
 
-        System.out.println("Quantos numeros ");
-        int [] var = new int[100];
 
-        for(int i = 0; i < var.length; i ++){
+        if (char1 >= 48 && char1 <= 57) {
+            System.out.print("char is Digit");
 
-            var[i] = i;
-        }
+        } else if ((char1 >= 'a' && char1 <= 'z') || (char1 >= 'A' && char1 <= 'Z')) {
+            System.out.print("char is Alphabet");
+        } else {
+            System.out.print("char is special character");
 
-        int p = 0;
-        for (int i = 0; i < var.length; i ++){
-
-            if(var[i] >= var[10] && var[i] <= 20){
-                p++;
-            }
-        }
-        System.out.println("soma dos pontos " + p);
-
-        for(int i = 0; i < var.length; i ++){
-
-            System.out.print(var[i] + " ");
         }
     }
 }
