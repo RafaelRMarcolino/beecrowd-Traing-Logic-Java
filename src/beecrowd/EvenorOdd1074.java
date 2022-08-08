@@ -21,7 +21,7 @@ public class EvenorOdd1074 {
         System.out.println("Quantas vezes quer fazer o teste ");
         int n = sc.nextInt();
 
-        int p = 0, m = 0;;
+        int p = 0, m = 0;
         for(int i =1; i<= n; i++){
 
             System.out.println("Digite um numero ");

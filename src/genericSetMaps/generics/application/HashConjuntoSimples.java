@@ -1,9 +1,9 @@
-package genericSetMaps.hashSet;
+package genericSetMaps.generics.application;
 
 import java.util.HashSet;
 import java.util.Set;
 
-public class ConjuntoBaguncado {
+public class HashConjuntoSimples {
 
     public static void main(String[] args){
 

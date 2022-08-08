@@ -1,24 +1,26 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Traing {
 
     public static void main(String[] args) {
 
-        Scanner scanner = new Scanner(System.in);
-        char char1 = scanner.next().charAt(0);
 
+        char [][]jogoVelha = new char[3][3];
 
-        if (char1 >= 48 && char1 <= 57) {
-            System.out.print("char is Digit");
+        for(int i =0; i< jogoVelha.length; i++){
+            for(int j =0; j< jogoVelha[i].length; j++){
 
-        } else if ((char1 >= 'a' && char1 <= 'z') || (char1 >= 'A' && char1 <= 'Z')) {
-            System.out.print("char is Alphabet");
-        } else {
-            System.out.print("char is special character");
+                System.out.print(jogoVelha[i][j] + " | ");
+            }
+            System.out.println();
 
         }
+
     }
 }
+
+
 
 
 

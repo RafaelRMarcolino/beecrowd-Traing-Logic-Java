@@ -23,6 +23,8 @@ public class EvenSquare1073 {
         int p = 0;
         for (int i = 0; i < n; i++) {
 
+            System.out.println(p);
+
             p = i;
             if (i % 2 == 0) {
                 System.out.println("raiz quadrada " + Math.sqrt(p));
