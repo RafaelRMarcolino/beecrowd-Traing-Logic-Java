@@ -2,7 +2,7 @@ package matriz;
 
 import java.util.Scanner;
 
-public class MatrizExercicio6 {
+public class JogoDaVelha {
 
     /** Faça um programa para jogar o jogo da velha. O Pragama deve permitir que os dois jogadores
      * façam uma partida do jogo da velha, usando o computador para ver o tabulheiro. Cada jogador vai alternando
@@ -103,10 +103,7 @@ public class MatrizExercicio6 {
                 System.out.println("Ninguem ganhou essa partida");
                 
             }
-
         }
-
-
 
         sc.close();
     }

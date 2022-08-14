@@ -2,7 +2,7 @@ package genericSetMaps.generics.application;
 
 import java.util.ArrayList;
 
-public class List {
+public class List<I> {
 
     public static void main(String[] args) {
 
@@ -27,4 +27,5 @@ public class List {
             System.out.println(u.nome );
         }
     }
+
 }
