@@ -2,7 +2,7 @@ package beecrowd;
 
 import java.util.Scanner;
 
-public class SumofConsecutiveOddNumbersII {
+public class SumofConsecutiveOddNumbersII1099 {
 
     public static void main(String[] args) {
 
