@@ -2,8 +2,7 @@ package vetor;
 
 import java.util.Scanner;
 
-public class ArrayFillII {
-
+public class ArrayFillII1177 {
     /**Write a program that reads a number T and fill a vector N[1000] with the numbers from 0 to T-1
      * repeated times, like as the example below.
 
@@ -28,15 +27,10 @@ public class ArrayFillII {
                 x[cont] = i;
                 cont++;
             }
-
         }
 
         for (int i=0; i < x.length; i++){
-
-
             System.out.println("N[" +i + "]= "+ x[i]);
         }
-
-
     }
 }
