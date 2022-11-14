@@ -5,14 +5,38 @@ public class Traing {
     public static void main(String[] args) {
 
         Scanner leitor = new Scanner(System.in);
-        double X = leitor.nextDouble();
-        double[] N = new double[100];
-        N[0] = X;
-        for (int i = 1; i < N.length; i++) {
-            N[i] = N[i - 1] / 2.0000;
+        int[] par = new int[5];
+        int[] impar = new int[5];
+        int X, contPar = 0, contImpar = 0;
+        for (int i = 0; i < 15; i++) {
+            X = leitor.nextInt();
+
+            if (X % 2 == 0) {
+                par[contPar] = X;
+                contPar++;
+            } else {
+                impar[contImpar] = X;
+                contImpar++;
+            }
+
+            if (contPar == 5) {
+                contPar = 0;
+                for (int j = 0; j < par.length; j++) {
+                    System.out.println("par[" + j + "] = " + par[j]);
+                }
+            } else if (contImpar == 5) {
+                contImpar = 0;
+                for (int j = 0; j < impar.length; j++) {
+                    System.out.println("impar[" + j + "] = " + impar[j]);
+                }
+            }
         }
-        for (int i = 0; i < N.length; i++) {
-            System.out.println(String.format("N[" + i + "] = %.4f", N[i]));
+
+        for (int i = 0; i < contImpar; i++) {
+            System.out.println("impar[" + i + "] = " + impar[i]);
+        }
+        for (int i = 0; i < contPar; i++) {
+            System.out.println("par[" + i + "] = " + par[i]);
         }
     }
 }
