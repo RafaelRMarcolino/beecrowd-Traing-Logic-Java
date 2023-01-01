@@ -16,9 +16,6 @@ public class HashConjunto {
         listaAprovados.add("Pedro");
 
 
-        for(String candidatos : listaAprovados){
-            System.out.println(candidatos);
-        }
 
         Set<Integer> nums = new HashSet<>();
 

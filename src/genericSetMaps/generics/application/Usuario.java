@@ -11,6 +11,7 @@ public class Usuario {
     }
 
     public Usuario(String nome) {
+
         this.nome = nome;
     }
 
